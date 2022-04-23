@@ -1,5 +1,5 @@
 [source,bash]
 ----
-$ echo '{"id":null,"beerName":"Beer1","beerStyle":"PALE_ALE","upc":123456789012,"createdDate":null,"lastUpdatedDate":null}' | http PUT 'https://dev.zikozee:80/api/v1/beer/b0f14a0a-59d1-49a7-838e-97138a442871' \
+$ echo '{"id":null,"beerName":"Beer1","beerStyle":"PALE_ALE","upc":123456789012,"createdDate":null,"lastUpdatedDate":null}' | http PUT 'https://dev.zikozee:80/api/v1/beer/e6d53f4e-46eb-4b7f-82ab-29e2c1bd0c15' \
     'Content-Type:application/json'
 ----

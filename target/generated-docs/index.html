@@ -437,14 +437,14 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 documentation snippets.</p>
 </div>
 <div class="paragraph">
-<p>GET BEER</p>
+<p><strong>GET BEER</strong></p>
 </div>
 <div class="paragraph">
 <p>One showing how to make a request using cURL:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-bash" data-lang="bash">$ curl 'https://dev.zikozee:80/api/v1/beer/2af7d5f9-0176-44f0-b0b8-26747c924631' -i -X GET \
+<pre class="highlight"><code class="language-bash" data-lang="bash">$ curl 'https://dev.zikozee:80/api/v1/beer/a2ea69df-b71e-4863-9e7f-5145765d585c' -i -X GET \
     -H 'Accept: application/json'</code></pre>
 </div>
 </div>
@@ -453,7 +453,7 @@ documentation snippets.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight nowrap"><code class="language-http" data-lang="http">GET /api/v1/beer/2af7d5f9-0176-44f0-b0b8-26747c924631 HTTP/1.1
+<pre class="highlight nowrap"><code class="language-http" data-lang="http">GET /api/v1/beer/a2ea69df-b71e-4863-9e7f-5145765d585c HTTP/1.1
 Accept: application/json
 Host: dev.zikozee:80</code></pre>
 </div>
@@ -467,7 +467,7 @@ Host: dev.zikozee:80</code></pre>
 Content-Length: 148
 Content-Type: application/json;charset=UTF-8
 
-{"id":"2af7d5f9-0176-44f0-b0b8-26747c924631","beerName":"Beer1","beerStyle":"PALE_ALE","upc":123456789012,"createdDate":null,"lastUpdatedDate":null}</code></pre>
+{"id":"a2ea69df-b71e-4863-9e7f-5145765d585c","beerName":"Beer1","beerStyle":"PALE_ALE","upc":123456789012,"createdDate":null,"lastUpdatedDate":null}</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -475,7 +475,7 @@ Content-Type: application/json;charset=UTF-8
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight nowrap"><code>{"id":"2af7d5f9-0176-44f0-b0b8-26747c924631","beerName":"Beer1","beerStyle":"PALE_ALE","upc":123456789012,"createdDate":null,"lastUpdatedDate":null}</code></pre>
+<pre class="highlight nowrap"><code>{"id":"a2ea69df-b71e-4863-9e7f-5145765d585c","beerName":"Beer1","beerStyle":"PALE_ALE","upc":123456789012,"createdDate":null,"lastUpdatedDate":null}</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -559,7 +559,7 @@ Content-Length: 114
 <div class="listingblock">
 <div class="content">
 <pre class="highlight nowrap"><code class="language-http" data-lang="http">HTTP/1.1 201 Created
-Location: /api/v1/beer/1440f84e-6acc-48cc-9238-44780fd16c10</code></pre>
+Location: /api/v1/beer/a90a415d-f955-4be4-810c-c53fb0a5b0ba</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -622,7 +622,7 @@ Location: /api/v1/beer/1440f84e-6acc-48cc-9238-44780fd16c10</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-bash" data-lang="bash">$ curl 'https://dev.zikozee:80/api/v1/beer/b0f14a0a-59d1-49a7-838e-97138a442871' -i -X PUT \
+<pre class="highlight"><code class="language-bash" data-lang="bash">$ curl 'https://dev.zikozee:80/api/v1/beer/e6d53f4e-46eb-4b7f-82ab-29e2c1bd0c15' -i -X PUT \
     -H 'Content-Type: application/json' \
     -d '{"id":null,"beerName":"Beer1","beerStyle":"PALE_ALE","upc":123456789012,"createdDate":null,"lastUpdatedDate":null}'</code></pre>
 </div>
@@ -632,7 +632,7 @@ Location: /api/v1/beer/1440f84e-6acc-48cc-9238-44780fd16c10</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight nowrap"><code class="language-http" data-lang="http">PUT /api/v1/beer/b0f14a0a-59d1-49a7-838e-97138a442871 HTTP/1.1
+<pre class="highlight nowrap"><code class="language-http" data-lang="http">PUT /api/v1/beer/e6d53f4e-46eb-4b7f-82ab-29e2c1bd0c15 HTTP/1.1
 Host: dev.zikozee:80
 Content-Type: application/json
 Content-Length: 114
@@ -705,7 +705,7 @@ Content-Length: 114
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-04-23 08:42:45 WAT
+Last updated 2022-04-23 08:52:27 WAT
 </div>
 </div>
 </body>
