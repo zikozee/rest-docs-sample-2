@@ -1,0 +1,6 @@
+[source,bash]
+----
+$ curl 'https://dev.zikozee:80/api/v1/beer/b0f14a0a-59d1-49a7-838e-97138a442871' -i -X PUT \
+    -H 'Content-Type: application/json' \
+    -d '{"id":null,"beerName":"Beer1","beerStyle":"PALE_ALE","upc":123456789012,"createdDate":null,"lastUpdatedDate":null}'
+----

@@ -1,0 +1,9 @@
+[source,http,options="nowrap"]
+----
+PUT /api/v1/beer/b0f14a0a-59d1-49a7-838e-97138a442871 HTTP/1.1
+Host: dev.zikozee:80
+Content-Type: application/json
+Content-Length: 114
+
+{"id":null,"beerName":"Beer1","beerStyle":"PALE_ALE","upc":123456789012,"createdDate":null,"lastUpdatedDate":null}
+----
