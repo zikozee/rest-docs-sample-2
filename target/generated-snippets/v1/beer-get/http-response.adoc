@@ -4,5 +4,5 @@ HTTP/1.1 200 OK
 Content-Length: 148
 Content-Type: application/json;charset=UTF-8
 
-{"id":"a2ea69df-b71e-4863-9e7f-5145765d585c","beerName":"Beer1","beerStyle":"PALE_ALE","upc":123456789012,"createdDate":null,"lastUpdatedDate":null}
+{"id":"379053f5-e27b-46fe-bf12-6324909d83ab","beerName":"Beer1","beerStyle":"PALE_ALE","upc":123456789012,"createdDate":null,"lastUpdatedDate":null}
 ----

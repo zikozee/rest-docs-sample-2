@@ -30,7 +30,8 @@ Response Fields:
 include::{snippets}/v1/beer-get/response-fields.adoc[]
 
 
-</br></br>
+
+
 **BEER POST**
 
 One showing how to make a request using cURL:
@@ -53,7 +54,7 @@ include::{snippets}/v1/beer-post/request-fields.adoc[]
 
 
 
-</br></br>
+
 **BEER UPDATE**
 
 One showing how to make a request using cURL:

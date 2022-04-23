@@ -1,6 +1,6 @@
 [source,http,options="nowrap"]
 ----
-GET /api/v1/beer/a2ea69df-b71e-4863-9e7f-5145765d585c HTTP/1.1
+GET /api/v1/beer/379053f5-e27b-46fe-bf12-6324909d83ab HTTP/1.1
 Accept: application/json
 Host: dev.zikozee:80
 

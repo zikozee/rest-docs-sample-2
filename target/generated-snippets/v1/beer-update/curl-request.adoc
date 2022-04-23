@@ -1,6 +1,6 @@
 [source,bash]
 ----
-$ curl 'https://dev.zikozee:80/api/v1/beer/e6d53f4e-46eb-4b7f-82ab-29e2c1bd0c15' -i -X PUT \
+$ curl 'https://dev.zikozee:80/api/v1/beer/49b775ef-daef-4c73-a535-2f74db97545c' -i -X PUT \
     -H 'Content-Type: application/json' \
     -d '{"id":null,"beerName":"Beer1","beerStyle":"PALE_ALE","upc":123456789012,"createdDate":null,"lastUpdatedDate":null}'
 ----

@@ -444,7 +444,7 @@ documentation snippets.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-bash" data-lang="bash">$ curl 'https://dev.zikozee:80/api/v1/beer/a2ea69df-b71e-4863-9e7f-5145765d585c' -i -X GET \
+<pre class="highlight"><code class="language-bash" data-lang="bash">$ curl 'https://dev.zikozee:80/api/v1/beer/379053f5-e27b-46fe-bf12-6324909d83ab' -i -X GET \
     -H 'Accept: application/json'</code></pre>
 </div>
 </div>
@@ -453,7 +453,7 @@ documentation snippets.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight nowrap"><code class="language-http" data-lang="http">GET /api/v1/beer/a2ea69df-b71e-4863-9e7f-5145765d585c HTTP/1.1
+<pre class="highlight nowrap"><code class="language-http" data-lang="http">GET /api/v1/beer/379053f5-e27b-46fe-bf12-6324909d83ab HTTP/1.1
 Accept: application/json
 Host: dev.zikozee:80</code></pre>
 </div>
@@ -467,7 +467,7 @@ Host: dev.zikozee:80</code></pre>
 Content-Length: 148
 Content-Type: application/json;charset=UTF-8
 
-{"id":"a2ea69df-b71e-4863-9e7f-5145765d585c","beerName":"Beer1","beerStyle":"PALE_ALE","upc":123456789012,"createdDate":null,"lastUpdatedDate":null}</code></pre>
+{"id":"379053f5-e27b-46fe-bf12-6324909d83ab","beerName":"Beer1","beerStyle":"PALE_ALE","upc":123456789012,"createdDate":null,"lastUpdatedDate":null}</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -475,7 +475,7 @@ Content-Type: application/json;charset=UTF-8
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight nowrap"><code>{"id":"a2ea69df-b71e-4863-9e7f-5145765d585c","beerName":"Beer1","beerStyle":"PALE_ALE","upc":123456789012,"createdDate":null,"lastUpdatedDate":null}</code></pre>
+<pre class="highlight nowrap"><code>{"id":"379053f5-e27b-46fe-bf12-6324909d83ab","beerName":"Beer1","beerStyle":"PALE_ALE","upc":123456789012,"createdDate":null,"lastUpdatedDate":null}</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -528,7 +528,8 @@ Content-Type: application/json;charset=UTF-8
 </tbody>
 </table>
 <div class="paragraph">
-<p><strong>BEER POST</strong></p>
+<p>&lt;/br&gt;&lt;/br&gt;
+<strong>BEER POST</strong></p>
 </div>
 <div class="paragraph">
 <p>One showing how to make a request using cURL:</p>
@@ -559,7 +560,7 @@ Content-Length: 114
 <div class="listingblock">
 <div class="content">
 <pre class="highlight nowrap"><code class="language-http" data-lang="http">HTTP/1.1 201 Created
-Location: /api/v1/beer/a90a415d-f955-4be4-810c-c53fb0a5b0ba</code></pre>
+Location: /api/v1/beer/222c114c-7309-41a6-ad9c-68826b6acd5d</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -615,14 +616,15 @@ Location: /api/v1/beer/a90a415d-f955-4be4-810c-c53fb0a5b0ba</code></pre>
 </tbody>
 </table>
 <div class="paragraph">
-<p><strong>BEER UPDATE</strong></p>
+<p>&lt;/br&gt;&lt;/br&gt;
+<strong>BEER UPDATE</strong></p>
 </div>
 <div class="paragraph">
 <p>One showing how to make a request using cURL:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-bash" data-lang="bash">$ curl 'https://dev.zikozee:80/api/v1/beer/e6d53f4e-46eb-4b7f-82ab-29e2c1bd0c15' -i -X PUT \
+<pre class="highlight"><code class="language-bash" data-lang="bash">$ curl 'https://dev.zikozee:80/api/v1/beer/49b775ef-daef-4c73-a535-2f74db97545c' -i -X PUT \
     -H 'Content-Type: application/json' \
     -d '{"id":null,"beerName":"Beer1","beerStyle":"PALE_ALE","upc":123456789012,"createdDate":null,"lastUpdatedDate":null}'</code></pre>
 </div>
@@ -632,7 +634,7 @@ Location: /api/v1/beer/a90a415d-f955-4be4-810c-c53fb0a5b0ba</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight nowrap"><code class="language-http" data-lang="http">PUT /api/v1/beer/e6d53f4e-46eb-4b7f-82ab-29e2c1bd0c15 HTTP/1.1
+<pre class="highlight nowrap"><code class="language-http" data-lang="http">PUT /api/v1/beer/49b775ef-daef-4c73-a535-2f74db97545c HTTP/1.1
 Host: dev.zikozee:80
 Content-Type: application/json
 Content-Length: 114
@@ -705,7 +707,7 @@ Content-Length: 114
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-04-23 08:52:27 WAT
+Last updated 2022-04-23 08:53:56 WAT
 </div>
 </div>
 </body>
