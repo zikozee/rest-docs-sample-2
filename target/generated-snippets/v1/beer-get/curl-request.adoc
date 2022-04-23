@@ -1,5 +1,5 @@
 [source,bash]
 ----
-$ curl 'https://dev.zikozee:80/api/v1/beer/379053f5-e27b-46fe-bf12-6324909d83ab' -i -X GET \
+$ curl 'https://dev.zikozee:80/api/v1/beer/9c24b898-3ede-4e53-93d0-8083b8fe19f4' -i -X GET \
     -H 'Accept: application/json'
 ----

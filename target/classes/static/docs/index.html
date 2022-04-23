@@ -444,7 +444,7 @@ documentation snippets.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-bash" data-lang="bash">$ curl 'https://dev.zikozee:80/api/v1/beer/379053f5-e27b-46fe-bf12-6324909d83ab' -i -X GET \
+<pre class="highlight"><code class="language-bash" data-lang="bash">$ curl 'https://dev.zikozee:80/api/v1/beer/9c24b898-3ede-4e53-93d0-8083b8fe19f4' -i -X GET \
     -H 'Accept: application/json'</code></pre>
 </div>
 </div>
@@ -453,7 +453,7 @@ documentation snippets.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight nowrap"><code class="language-http" data-lang="http">GET /api/v1/beer/379053f5-e27b-46fe-bf12-6324909d83ab HTTP/1.1
+<pre class="highlight nowrap"><code class="language-http" data-lang="http">GET /api/v1/beer/9c24b898-3ede-4e53-93d0-8083b8fe19f4 HTTP/1.1
 Accept: application/json
 Host: dev.zikozee:80</code></pre>
 </div>
@@ -467,7 +467,7 @@ Host: dev.zikozee:80</code></pre>
 Content-Length: 148
 Content-Type: application/json;charset=UTF-8
 
-{"id":"379053f5-e27b-46fe-bf12-6324909d83ab","beerName":"Beer1","beerStyle":"PALE_ALE","upc":123456789012,"createdDate":null,"lastUpdatedDate":null}</code></pre>
+{"id":"9c24b898-3ede-4e53-93d0-8083b8fe19f4","beerName":"Beer1","beerStyle":"PALE_ALE","upc":123456789012,"createdDate":null,"lastUpdatedDate":null}</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -475,7 +475,7 @@ Content-Type: application/json;charset=UTF-8
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight nowrap"><code>{"id":"379053f5-e27b-46fe-bf12-6324909d83ab","beerName":"Beer1","beerStyle":"PALE_ALE","upc":123456789012,"createdDate":null,"lastUpdatedDate":null}</code></pre>
+<pre class="highlight nowrap"><code>{"id":"9c24b898-3ede-4e53-93d0-8083b8fe19f4","beerName":"Beer1","beerStyle":"PALE_ALE","upc":123456789012,"createdDate":null,"lastUpdatedDate":null}</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -528,8 +528,7 @@ Content-Type: application/json;charset=UTF-8
 </tbody>
 </table>
 <div class="paragraph">
-<p>&lt;/br&gt;&lt;/br&gt;
-<strong>BEER POST</strong></p>
+<p><strong>BEER POST</strong></p>
 </div>
 <div class="paragraph">
 <p>One showing how to make a request using cURL:</p>
@@ -560,7 +559,7 @@ Content-Length: 114
 <div class="listingblock">
 <div class="content">
 <pre class="highlight nowrap"><code class="language-http" data-lang="http">HTTP/1.1 201 Created
-Location: /api/v1/beer/222c114c-7309-41a6-ad9c-68826b6acd5d</code></pre>
+Location: /api/v1/beer/ced33f21-a884-46a2-a495-fb3f93997bbe</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -576,55 +575,49 @@ Location: /api/v1/beer/222c114c-7309-41a6-ad9c-68826b6acd5d</code></pre>
 </div>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
-<col style="width: 33%;">
-<col style="width: 33%;">
-<col style="width: 33%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
 </colgroup>
 <thead>
 <tr>
 <th class="tableblock halign-left valign-top">Path</th>
 <th class="tableblock halign-left valign-top">Type</th>
 <th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">Constraints</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>beerName</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>String</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">beerName</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Beer name</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Must not be blank. Size must be between 3 and 100 inclusive</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>beerStyle</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>String</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">beerStyle</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Beer Style</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Must not be blank</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>upc</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Number</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">upc</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">upc of Beer</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>createdDate</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Null</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Beer created Date</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>lastUpdatedDate</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Null</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Beer last update</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Must be positive</p></td>
 </tr>
 </tbody>
 </table>
 <div class="paragraph">
-<p>&lt;/br&gt;&lt;/br&gt;
-<strong>BEER UPDATE</strong></p>
+<p><strong>BEER UPDATE</strong></p>
 </div>
 <div class="paragraph">
 <p>One showing how to make a request using cURL:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-bash" data-lang="bash">$ curl 'https://dev.zikozee:80/api/v1/beer/49b775ef-daef-4c73-a535-2f74db97545c' -i -X PUT \
+<pre class="highlight"><code class="language-bash" data-lang="bash">$ curl 'https://dev.zikozee:80/api/v1/beer/9019128b-9e05-4095-afad-cd65d7253419' -i -X PUT \
     -H 'Content-Type: application/json' \
     -d '{"id":null,"beerName":"Beer1","beerStyle":"PALE_ALE","upc":123456789012,"createdDate":null,"lastUpdatedDate":null}'</code></pre>
 </div>
@@ -634,7 +627,7 @@ Location: /api/v1/beer/222c114c-7309-41a6-ad9c-68826b6acd5d</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight nowrap"><code class="language-http" data-lang="http">PUT /api/v1/beer/49b775ef-daef-4c73-a535-2f74db97545c HTTP/1.1
+<pre class="highlight nowrap"><code class="language-http" data-lang="http">PUT /api/v1/beer/9019128b-9e05-4095-afad-cd65d7253419 HTTP/1.1
 Host: dev.zikozee:80
 Content-Type: application/json
 Content-Length: 114
@@ -663,42 +656,37 @@ Content-Length: 114
 </div>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
-<col style="width: 33%;">
-<col style="width: 33%;">
-<col style="width: 33%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
 </colgroup>
 <thead>
 <tr>
 <th class="tableblock halign-left valign-top">Path</th>
 <th class="tableblock halign-left valign-top">Type</th>
 <th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">Constraints</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>beerName</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>String</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">beerName</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Beer name</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Must not be blank. Size must be between 3 and 100 inclusive</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>beerStyle</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>String</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">beerStyle</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Beer Style</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Must not be blank</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>upc</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Number</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">upc</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">upc of Beer</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>createdDate</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Null</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Beer created Date</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>lastUpdatedDate</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Null</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Beer last update</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Must be positive</p></td>
 </tr>
 </tbody>
 </table>
@@ -707,7 +695,7 @@ Content-Length: 114
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-04-23 08:53:56 WAT
+Last updated 2022-04-23 08:55:53 WAT
 </div>
 </div>
 </body>

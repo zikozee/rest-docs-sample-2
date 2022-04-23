@@ -1,6 +1,6 @@
 [source,http,options="nowrap"]
 ----
-PUT /api/v1/beer/49b775ef-daef-4c73-a535-2f74db97545c HTTP/1.1
+PUT /api/v1/beer/9019128b-9e05-4095-afad-cd65d7253419 HTTP/1.1
 Host: dev.zikozee:80
 Content-Type: application/json
 Content-Length: 114

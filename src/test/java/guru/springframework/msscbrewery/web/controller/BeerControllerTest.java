@@ -101,8 +101,8 @@ public class BeerControllerTest {
                                 fields.withPath("beerName").description("Beer name"),
                                 fields.withPath("beerStyle").description("Beer Style"),
                                 fields.withPath("upc").description(" upc of Beer"),
-                                fields.withPath("createdDate").description("Beer created Date"),
-                                fields.withPath("lastUpdatedDate").description("Beer last update")
+                                fields.withPath("createdDate").ignored(),
+                                fields.withPath("lastUpdatedDate").ignored()
 
                         )));
 
@@ -131,8 +131,8 @@ public class BeerControllerTest {
                                 fields.withPath("beerName").description("Beer name"),
                                 fields.withPath("beerStyle").description("Beer Style"),
                                 fields.withPath("upc").description(" upc of Beer"),
-                                fields.withPath("createdDate").description("Beer created Date"),
-                                fields.withPath("lastUpdatedDate").description("Beer last update")
+                                fields.withPath("createdDate").ignored(),
+                                fields.withPath("lastUpdatedDate").ignored()
 
                         )));;
 
