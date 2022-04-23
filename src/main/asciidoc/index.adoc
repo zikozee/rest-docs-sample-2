@@ -9,7 +9,7 @@ Another Sample Application demonstrating how to use Spring REST Docs with JUnit 
 `BeerOrderControllerTest` makes a call to a very simple service and produces three
 documentation snippets.
 
-GET BEER
+**GET BEER**
 
 One showing how to make a request using cURL:
 
